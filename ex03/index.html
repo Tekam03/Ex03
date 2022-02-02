@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice 03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css"/>
+
+    <style>
+        div.card-content p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 260px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <div class="columns">
+            <div class="column has-text-centered">
+                <h1 class="title">Exercice 03</h1><br>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label for="titre" class="label">Titre</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <p class="control is-expanded">
+                            <input id="titre" class="input" type="text" placeholder="Titre de l'album">
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal" style="padding-left:20px">
+                <div class="field-label is-normal">
+                    <label class="label" for="artistes">Artiste</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control" style="min-width: 200px">
+                            <div class="select is-fullwidth">
+                                <select id="artistes">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field is-horizontal">
+                <div class="field-label">
+                    <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <button id="btnFiltrer" class="button is-primary" onclick="filtrer()">
+                                Filtrer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="albums" class="row columns is-multiline">
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>e2074217</p>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
